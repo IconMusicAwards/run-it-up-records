@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Run It Up Records — music, culture and legacy in Los Santos.">
+  <title>Run It Up Records</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Run It Up Records home">
+      <span class="brand-mark">RIU</span><span>RUN IT UP RECORDS</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">MENU</button>
+    <nav>
+      <a href="#artists">Artists</a><a href="#releases">Releases</a><a href="#events">Events</a>
+      <a href="#gallery">Gallery</a><a href="#team">The Label</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">LOS SANTOS • INDEPENDENT RECORD LABEL</p>
+        <h1>RUN IT UP<br><span>RECORDS</span></h1>
+        <p class="hero-line">More than music. We build legacy.</p>
+        <div class="hero-actions"><a class="button gold" href="#artists">Meet the artists</a><a class="button ghost" href="#label">Discover RIU</a></div>
+      </div>
+      <div class="hero-emblem reveal">
+        <div class="logo-placeholder"><strong>RIU</strong><small>OFFICIAL LOGO</small><span>Replace with assets/logos/riu-logo.png</span></div>
+      </div>
+      <div class="scroll-note">SCROLL TO DISCOVER <i></i></div>
+    </section>
+
+    <section class="statement" id="label">
+      <p class="section-number">01 / THE LABEL</p>
+      <h2>Built in Los Santos.<br><em>Made to leave a mark.</em></h2>
+      <p class="lead">Run It Up Records is a home for artists, creators and visionaries. This space will tell the label's story, spotlight its people and preserve the moments that shape its legacy.</p>
+      <div class="stats"><div><strong>RIU</strong><span>One Family</span></div><div><strong>LS</strong><span>Our City</span></div><div><strong>∞</strong><span>The Legacy</span></div></div>
+    </section>
+
+    <section class="content-section" id="artists">
+      <div class="section-head"><div><p class="section-number">02 / ROSTER</p><h2>Our Artists</h2></div><p>The voices moving Run It Up forward.</p></div>
+      <div class="card-grid artist-grid" id="artistGrid"></div>
+    </section>
+
+    <section class="content-section alt" id="releases">
+      <div class="section-head"><div><p class="section-number">03 / MUSIC</p><h2>Latest Releases</h2></div><p>Singles, projects and moments from the RIU catalog.</p></div>
+      <div class="release-grid" id="releaseGrid"></div>
+    </section>
+
+    <section class="content-section" id="events">
+      <div class="section-head"><div><p class="section-number">04 / LIVE</p><h2>Events</h2></div><p>From intimate rooms to city-wide moments.</p></div>
+      <div class="event-grid" id="eventGrid"></div>
+    </section>
+
+    <section class="content-section gallery-section" id="gallery">
+      <div class="section-head"><div><p class="section-number">05 / ARCHIVE</p><h2>Gallery</h2></div><p>A living archive of Run It Up Records.</p></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="impact">
+      <p class="section-number">06 / LOS SANTOS</p>
+      <h2>Our impact goes<br><em>beyond the studio.</em></h2>
+      <div class="impact-grid" id="impactGrid"></div>
+    </section>
+
+    <section class="content-section" id="team">
+      <div class="section-head"><div><p class="section-number">07 / THE PEOPLE</p><h2>Leadership & Staff</h2></div><p>The team behind the label.</p></div>
+      <div class="card-grid team-grid" id="teamGrid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-number">08 / CONNECT</p><h2>Let's make<br><em>something matter.</em></h2>
+      <p>Artist inquiries • Collaborations • Events • Partnerships</p>
+      <a class="button gold" href="#">Contact Run It Up</a>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">RUN IT UP <span>RECORDS</span></div><p>LOS SANTOS</p><p>© <span id="year"></span> RUN IT UP RECORDS</p></footer>
+  <script src="js/content.js"></script><script src="js/app.js"></script>
+</body>
+</html>
