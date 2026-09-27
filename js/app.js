@@ -1,0 +1,13 @@
+const C=window.RIU_CONTENT;
+const img=(src,label,cls="")=>src?`<div class="${cls}" style="background:url('${src}') center/cover"></div>`:`<div class="${cls} placeholder" data-label="${label}"></div>`;
+document.querySelector("#artistGrid").innerHTML=C.artists.map(x=>`<article class="person-card reveal">${img(x.image,"ARTIST PHOTO","person-image")}<div class="person-info"><h3>${x.name}</h3><p>${x.role}</p></div></article>`).join("");
+document.querySelector("#teamGrid").innerHTML=C.team.map(x=>`<article class="person-card reveal">${img(x.image,"TEAM PHOTO","person-image")}<div class="person-info"><h3>${x.name}</h3><p>${x.role}</p></div></article>`).join("");
+document.querySelector("#releaseGrid").innerHTML=C.releases.map(x=>`<article class="release-card reveal">${img(x.image,"COVER ART","release-cover")}<div class="release-meta"><h3>${x.title}</h3><p>${x.artist} • ${x.date}</p></div></article>`).join("");
+document.querySelector("#eventGrid").innerHTML=C.events.map(x=>`<article class="event-card reveal">${img(x.image,"EVENT POSTER","event-image")}<div class="event-meta"><span>${x.date}</span><h3>${x.title}</h3><p>${x.location}</p></div></article>`).join("");
+document.querySelector("#galleryGrid").innerHTML=C.gallery.map(x=>x.image?`<div class="gallery-item reveal" style="background:url('${x.image}') center/cover"></div>`:`<div class="gallery-item placeholder reveal" data-label="${x.label}"></div>`).join("");
+document.querySelector("#impactGrid").innerHTML=C.impact.map(x=>`<article class="impact-card reveal"><span>${x.number}</span><h3>${x.title}</h3><p>${x.text}</p></article>`).join("");
+document.querySelector("#year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+const header=document.querySelector(".site-header");addEventListener("scroll",()=>header.classList.toggle("scrolled",scrollY>30));
+const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector("nav");toggle.onclick=()=>nav.classList.toggle("open");nav.querySelectorAll("a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
