@@ -1,6 +1,6 @@
 (function(){
 var $=function(id){return document.getElementById(id)};var PERMS=null;
-function hideAll(){['hub','items','contactInbox','financePanel','sheetPanel','permissionsPanel'].forEach(function(id){var e=$(id);if(e)e.classList.add('hidden')});var n=$('newItem');if(n)n.classList.add('hidden')}
+function hideAll(){['hub','items','contactInbox','financePanel','sheetPanel','permissionsPanel','bannerPanel'].forEach(function(id){var e=$(id);if(e)e.classList.add('hidden')});var n=$('newItem');if(n)n.classList.add('hidden')}
 function session(){try{var s=JSON.parse(sessionStorage.getItem('riu_session')||'null');var h=JSON.parse(localStorage.getItem('riu_hub_session')||'null');if(s&&s.token)return {token:s.token,uid:s.uid,role:s.role||(h&&h.uid===s.uid?h.role:null)};return h}catch(e){return null}}
 function auth(){var s=session();return s&&s.token?s:null}
 async function req(path,opt){var s=auth();if(!s)throw Error('Please sign in again.');opt=opt||{};var headers=Object.assign({'apikey':'sb_publishable_J8u9PnOnfhnUhT1ORgfrgw_TMkTo7J5','Authorization':'Bearer '+s.token,'Content-Type':'application/json'},opt.headers||{});var r=await fetch('https://uowznuvauqfgeewtqgwo.supabase.co'+path,Object.assign({},opt,{headers:headers}));if(!r.ok)throw Error(await r.text());var t=await r.text();return t?JSON.parse(t):[]}
