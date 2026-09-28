@@ -66,7 +66,7 @@
 
 /* RIU collage statement */
 .brand-break{position:relative;min-height:430px;padding:0;background:#111;display:grid;place-items:center;overflow:hidden;border-top:1px solid #d6a90066;border-bottom:1px solid #d6a90066;isolation:isolate}
-.brand-break-fade{position:absolute;inset:0;z-index:-2;background-image:url('../assets/riu-header.png');background-size:cover;background-position:center;filter:saturate(.72) brightness(.48);transform:scale(1.015)}
+.brand-break-fade{position:absolute;inset:0;z-index:-2;background-image:url('../assets/riu-collage.png');background-size:cover;background-position:center;filter:saturate(.82) brightness(.5);transform:scale(1.015)}
 .brand-break:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,5,5,.68),rgba(5,5,5,.35) 45%,rgba(5,5,5,.68)),linear-gradient(0deg,rgba(0,0,0,.32),rgba(0,0,0,.12))}
 .brand-break-copy{text-align:center;padding:60px 6vw;text-shadow:0 4px 30px #000}
 .brand-break small{font-size:9px;letter-spacing:3px;color:#d6a900;font-weight:700}
