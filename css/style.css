@@ -21,4 +21,14 @@
 .team-card .person-image{transition:filter .3s ease,transform .4s ease}
 .team-card:hover .person-image{filter:brightness(.92)}
 @media(max-width:1050px){.owner-card{display:block}.owner-card .person-image{height:430px;min-height:0}.owner-card .team-bio{padding:0 28px 28px}.team .team-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.owner-grid,.team .team-grid{grid-template-columns:1fr!important}.owner-card .person-image,.team .team-grid .person-image{height:420px}}
+@media(max-width:700px){.owner-grid,.team .team-grid{grid-template-columns:1fr!important}.owner-card .person-image,.team .team-grid .person-image{height:420px}}/* Owner cards: compact full-photo cards side by side */
+.owner-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,360px))!important;gap:18px!important;justify-content:start!important}
+.owner-card{display:block!important;min-height:0!important;width:100%;background:#0b0b0b!important;border:1px solid #d6a90055!important;overflow:hidden}
+.owner-card .person-image{height:330px!important;min-height:0!important;width:100%!important}
+.owner-card .person-info{display:block!important;padding:17px 18px 8px!important}
+.owner-card .person-info h3{font-size:28px!important;line-height:1!important}
+.owner-card .person-info p{margin:8px 0 0!important;font-size:8px!important}
+.owner-card .team-bio{display:block!important;padding:0 18px 18px!important;font-size:10px!important;line-height:1.6!important;color:#999!important}
+.owner-card .team-role-tag{top:12px!important;left:12px!important;padding:7px 10px!important;font-size:7px!important}
+@media(max-width:780px){.owner-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.owner-card .person-image{height:300px!important}}
+@media(max-width:520px){.owner-grid{grid-template-columns:1fr!important}.owner-card .person-image{height:380px!important}}
