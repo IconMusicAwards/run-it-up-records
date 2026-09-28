@@ -15,7 +15,7 @@ function bind(){
     if(b.id==='hubBtn')target='hub';
     else if(b.id==='inboxBtn')target='contactInbox';
     else if(b.id==='financeBtn')target='financePanel';
-    else if(b.id==='sheetBtn')target='sheetPanel';
+    else if(b.id==='sheetBtn')target='financePanel';
     else if(b.id==='permissionsBtn')target='permissionsPanel';
     else if(b.id==='bannerBtn')target='bannerPanel';
     else if(b.dataset.view)target='items';
