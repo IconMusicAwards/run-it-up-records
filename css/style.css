@@ -46,4 +46,4 @@
 .owner-grid .owner-card .person-info{padding:16px 16px 8px!important}
 .owner-grid .owner-card .person-info h3{font-size:27px!important}
 .owner-grid .owner-card .team-bio{padding:0 16px 16px!important;font-size:9.5px!important}
-@media(max-width:700px){.owner-grid .owner-card{flex-basis:250px!important;width:250px!important;min-width:250px!important}.owner-grid .owner-card .person-image{height:270px!important}}
+@media(max-width:700px){.owner-grid .owner-card{flex-basis:250px!important;width:250px!important;min-width:250px!important}.owner-grid .owner-card .person-image{height:270px!important}}.staff-subgroup+.staff-subgroup{margin-top:58px}.executive-group .team-role-tag{background:#d6a900!important;color:#080808!important}.executive-group .team-card{border-color:#d6a90055!important}.general-group .team-role-tag{background:#0b0b0b!important;color:#d6a900!important}
